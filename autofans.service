@@ -1,0 +1,10 @@
+[Unit]
+Description=Huawei iBMC Fan Speed Controller
+
+[Service]
+ExecStart=/bin/bash /etc/autofans/autofans.sh
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=default.target
