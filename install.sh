@@ -27,7 +27,7 @@ cp fancontrol.sh "$TARGETDIR/"
 
 echo "*** Creating, (re)starting and enabling SystemD service..."
 cp fancontrol.service /etc/systemd/system/fancontrol.service
-sed -i "s#{TARGETDIR}#$TARGETDIR#g" /etc/systemd/system/fan-control.service
+sed -i "s#{TARGETDIR}#$TARGETDIR#g" /etc/systemd/system/fancontrol.service
 systemctl daemon-reload
 systemctl restart fancontrol
 systemctl enable fancontrol
