@@ -2,7 +2,7 @@
 Description=Huawei iBMC Fan Speed Controller
 
 [Service]
-ExecStart=/bin/bash /etc/autofans/autofans.sh
+ExecStart=/bin/bash #{TARGETDIR}/fancontrol.sh
 Restart=always
 RestartSec=10s
 
